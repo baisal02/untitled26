@@ -1,10 +1,11 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
     private String customerName;
-    private List<Order> orders;
+    private List<Order> orders = new ArrayList<>();
 
     public String getCustomerName() {
         return customerName;
@@ -24,7 +25,7 @@ public class Customer {
 
     public Customer(String customerName, Order order) {
         this.customerName = customerName;
-        this.orders = orders;
+        orders.add(order);
     }
     public Customer(){
 

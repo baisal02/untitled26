@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DeliveryCompany {
-    private final double pricePerKilogram = 20.0;
+    public static final double pricePerKilogram = 20.0;
 
     public double getPricePerKilogram() {
         return pricePerKilogram;
@@ -16,7 +16,7 @@ public class DeliveryCompany {
 
     private final double maxCapacityPerSquareMeter = 10.0;
     private String deliveryCompanyName;
-    List<Customer>customers;
+    List<Customer>customers = new ArrayList<>();
 
     public String getDeliveryCompanyName() {
         return deliveryCompanyName;
@@ -36,7 +36,6 @@ public class DeliveryCompany {
 
     public DeliveryCompany(String deliveryCompanyName) {
         this.deliveryCompanyName = deliveryCompanyName;
-
     }
 
 }
